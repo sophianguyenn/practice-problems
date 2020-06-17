@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<script>
+  var decimalPlaceCounter = function (stringNumber){
+    if(Math.floor(stringNumber) === stringNumber) return 0;
+    return stringNumber.toString().split('.')[1].length || 0;
+  }
+
+  console.log('decimalPlaceCounter(127.245):', decimalPlaceCounter(127.245));
+  console.log('decimalPlaceCounter(145):', decimalPlaceCounter(145));
+  console.log('decimalPlaceCounter(23.00):', decimalPlaceCounter(23.00));
+</script>
+</body>
+</html>
