@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Builder</title>
+</head>
+<body>
+
+  <script>
+    function wordBuilder(wordToSpell){
+
+     var splitString = '';
+     var wordArray = [];
+
+     for(var i=0; i < wordToSpell.length; i++){
+       splitString+=wordToSpell[i];
+       wordArray.push(splitString)
+     }
+     return wordArray;
+    }
+    console.log('wordBuilder("JavaScript"):', wordBuilder('JavaScript'))
+     console.log('wordBuilder("Moon"):', wordBuilder('Moon'))
+      console.log('wordBuilder("Stars"):', wordBuilder('Stars'))
+  </script>
+</body>
+</html>
