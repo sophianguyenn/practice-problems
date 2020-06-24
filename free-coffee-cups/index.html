@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Coffee Cups</title>
+</head>
+<body>
+
+
+
+  <script>
+    function freeCoffeeCups(coffeeCups){
+      if(coffeeCups >=6){
+        coffeeCups += (coffeeCups/6);
+        return  Math.floor(coffeeCups);
+      } else {
+        return coffeeCups;
+      }
+
+    }
+    console.log('freeCoffeeCups(13):', freeCoffeeCups(13));
+    console.log('freeCoffeeCups(6):', freeCoffeeCups(6));
+    console.log('freeCoffeeCups(5):', freeCoffeeCups(5));
+  </script>
+</body>
+</html>
