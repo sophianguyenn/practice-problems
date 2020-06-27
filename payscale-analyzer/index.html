@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payscale-Analyzer</title>
+</head>
+
+
+<body>
+  <script>
+    function payscaleAnalyzer(payList){
+      var arrayMin = 0;
+      var arrayMax = 0;
+
+      for (var i=0; i<= payList.length; i++){
+        if(payList[i] < arrayMin){
+          arrayMin = payList[i];
+        }
+        if(payList[i] > arrayMax){
+          arrayMax = payList[i];
+        }
+      }
+      return arrayMax - arrayMin;
+    }
+
+    console.log('payscaleAnalyzer([28, 34, 21, 39]):', payscaleAnalyzer([28, 34, 21, 39]))
+    console.log('payscaleAnalyzer([18, 22, 19, 26]):', payscaleAnalyzer([18, 22, 19, 26]))
+    console.log('payscaleAnalyzer([41.50, 27.25, 32.50, 29.60]):', payscaleAnalyzer([41.50, 27.25, 32.50, 29.60]))
+  </script>
+
+</body>
+</html>
