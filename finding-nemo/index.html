@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding-Nemo</title>
+</head>
+<body>
+
+
+  <script>
+    function findingNemo(sentence){
+      // var searchWord = 'Nemo';
+      // var indexOfWord = sentence.indexOf(searchWord, 0);
+      // return indexOfWord;
+      var str = sentence;
+      var splitString = str.split(' ');
+      var n = splitString.indexOf("Nemo") + 1;
+      return n;
+    }
+    console.log('findingNemo("I am Nemo"):', findingNemo("I am Nemo"));
+    console.log('findingNemo("Where is Nemo my son?"):', findingNemo("Where is Nemo my son?"));
+    console.log('findingNemo("Nemo is my name"):', findingNemo("Nemo is my name"));
+  </script>
+</body>
+</html>
