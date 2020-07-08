@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fog-clearer</title>
+</head>
+<body>
+
+
+<script>
+  function fogClearer(stringToClear){
+    for(var i = 0; i < stringToClear.length; i++){
+      var newString = stringToClear.split('f').join('');
+      stringToClear.split('o').join('');
+      stringToClear.split('g').join('');
+    }
+    return newString;
+  }
+  console.log('fogClearer("fffdarkooooooggggggg"):', fogClearer("fffdarkooooooggggggg"))
+  console.log('fogClearer("I like nice trees"):', fogClearer("I like nice trees"))
+  console.log('fogClearer("foogooooffffhuhooofff"):', fogClearer("foogooooffffhuhooofff"))
+</script>
+</body>
+</html>
