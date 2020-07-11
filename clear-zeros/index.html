@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clear-zeros</title>
+</head>
+<body>
+
+
+  <script>
+    function clearZeros(numberString) {
+      var leadingZeros = numberString.replace(/^0+/, "");
+      var trailingZeros = parseFloat(leadingZeros);
+    }
+    console.log('clearZeros("00032.2000"):', clearZeros("00032.2000"))
+    console.log('clearZeros("32.07210"):', clearZeros("32.07210"))
+    console.log('clearZeros("02100.001200"):', clearZeros("02100.001200"))
+  </script>
+</body>
+</html>
