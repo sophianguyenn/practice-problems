@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>is-greater-than-one</title>
+</head>
+<body>
+
+
+  <script>
+    function isGreaterThanOne(fraction) {
+      var split = fraction.split('/');
+      var result = parseInt(split[0], 10) / parseInt(split[1], 10);
+      if(result > 1){
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    console.log('isGreaterThanOne("7/5"):', isGreaterThanOne("7/5"))
+    console.log('isGreaterThanOne("3/4"):', isGreaterThanOne("3/4"))
+    console.log('isGreaterThanOne("13/11"):', isGreaterThanOne("13/11"))
+  </script>
+</body>
+</html>
